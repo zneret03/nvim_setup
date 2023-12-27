@@ -83,14 +83,14 @@ M.tabufline = {
 
   n = {
     -- cycle through buffers
-    ["<tab>"] = {
+    ["1"] = {
       function()
         require("nvchad.tabufline").tabuflineNext()
       end,
       "Goto next buffer",
     },
 
-    ["<S-tab>"] = {
+    ["2"] = {
       function()
         require("nvchad.tabufline").tabuflinePrev()
       end,
@@ -398,6 +398,7 @@ M.blankline = {
 
 M.gitsigns = {
   plugin = true,
+  
 
   n = {
     -- Navigation through hunks
